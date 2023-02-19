@@ -27,7 +27,7 @@ const Test = () => {
     } else {
       try {
         setLoading(true);
-        const res = await axios.post("http://localhost:3080/", {
+        const res = await axios.post("https://quizmakerbackend.onrender.com", {
           topic,
           questionCount: numQuestions,
           difficulty,
